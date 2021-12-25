@@ -1,0 +1,5 @@
+import numpy as np
+n,m= map(int,input().split())
+arr=np.array([input().split() for i in range(n)],dtype=int) # array 
+minarr=np.min(arr, axis=1) # return arr with minimum value 
+print(np.max(minarr)) #print  maximum value array according to output format
